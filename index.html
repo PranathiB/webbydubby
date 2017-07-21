@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<head>
+    <title>Welcome to our world</title>
+    <link href="styles/MyStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script src="scripts/magicWordAnalyser.js"></script>
+</head>
+<body>
+<div id="magicZone">
+    <p id="textM">Enter the Magic Word here</p>
+    <br />
+    <input id=pass type="password" name="password" required placeholder="..."
+           onkeypress="if(event.keyCode === 13) magicWordAnalyser(document.getElementById('pass').value)">
+
+    <img name=arrow src="http://www.clker.com/cliparts/3/6/c/b/11949941671787360471rightarrow.svg.thumb.png"
+         alt="Click Me!!"
+         onclick="magicWordAnalyser(document.getElementById('pass').value)"  />
+    </div>
+
+</body>
+</html>
