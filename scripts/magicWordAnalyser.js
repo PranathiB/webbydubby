@@ -1,23 +1,34 @@
-// var sanitizeHtml = require('sanitize-html');
 
 function magicWordAnalyser(pass){
-    // sanepass = sanitizeHtml(pass);
+    clearErrorMessage();
     function clearField() {
         document.getElementById('pass').value = '';
     }
 
-// console.log(sanepass)
+    function wrongPass() {
+        document.getElementById('errorZone').innerHTML = "Uh-Oh!! That is not the right spell!";
+    }
+
     if(pass === "") {
-        // document.getElementById('passerror').innerHTML ="Uh-Oh!! Give me the magic word!"
-        alert("Nooooo")
+        wrongPass();
         clearField();
     }
     else if(pass === "hello") {
-        alert("success");
+        successMessage();
         clearField();
     }
     else {
-        alert("Boo Boo!");
+        wrongPass();
         clearField();
     }
+}
+
+function clearErrorMessage() {
+    document.getElementById('pass').setAttribute('placeholder', '');
+    document.getElementById('errorZone').innerHTML = '';
+    document.getElementById('success').innerHTML = '';
+}
+
+function successMessage() {
+    document.getElementById('success').innerHTML = "Congratulations!";
 }
