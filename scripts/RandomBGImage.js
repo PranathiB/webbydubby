@@ -1,9 +1,6 @@
-// $(document).ready(function(){
-//     var classCycle=['bg1','bg2'];
-//
-//     // var randomNumber = Math.floor(Math.random() * classCycle.length);
-//     // var classToAdd = classCycle[randomNumber];
-//
-//     $('body').addClass(classCycle[0]);
-//
-// });
+function changeRandomimage() {
+    const number = 11;
+    var randomImage = Math.floor(Math.random() * number)+1;
+    document.body.background = 'images/'+randomImage+'.jpeg';
+}
+changeRandomimage();
