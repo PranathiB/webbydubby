@@ -4,16 +4,10 @@ html, body{
 }
 
 body{
-    background: url("../images/3.jpeg") no-repeat;
     background-size:cover;
     height: auto;
     max-width: 100%;
 }
-/*.bg2{*/
-    /*background: url("../images/2.jpeg") no-repeat;*/
-    /*background-size:cover;*/
-    /*overflow: auto;*/
-/*}*/
 
 #textM{
     text-align: center;

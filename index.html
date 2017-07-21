@@ -6,6 +6,7 @@
     <link href="styles/MyStyle.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <script src="scripts/magicWordAnalyser.js"></script>
+
 </head>
 <body>
 <p id="textM">Enter the Magic Word</p>
@@ -17,11 +18,19 @@
            onkeypress="if(event.keyCode === 13) magicWordAnalyser(document.getElementById('pass').value)"
         onclick="clearErrorMessage()" >
 
-    <img id=arrow src="http://www.clker.com/cliparts/3/6/c/b/11949941671787360471rightarrow.svg.thumb.png"
+    <img id=arrow src="images/arrow.png"
          alt="Click Me!!"
          onclick="magicWordAnalyser(document.getElementById('pass').value)"  />
     </div>
 <div id="errorZone"> </div>
 <div id="success"></div>
 </body>
+<script type="text/javascript">
+    function changeRandomimage() {
+        var randomImage = Math.floor(Math.random() * 11);
+        document.body.background = 'images/'+randomImage+'.jpeg';
+    }
+    changeRandomimage();
+</script>
+
 </html>
