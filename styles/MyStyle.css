@@ -1,25 +1,26 @@
 html, body{
-    background-size:cover;
     font-family: "Open Sans", cursive ;
-    background-position: center;
     font-weight: normal;
 }
 
 body{
     background: url("../images/3.jpeg") no-repeat;
     background-size:cover;
+    height: auto;
+    max-width: 100%;
 }
-.bg2{
-    background: url("../images/2.jpeg") no-repeat;
-    background-size:cover;
-    overflow: auto;
-}
+/*.bg2{*/
+    /*background: url("../images/2.jpeg") no-repeat;*/
+    /*background-size:cover;*/
+    /*overflow: auto;*/
+/*}*/
 
 #textM{
     text-align: center;
     font-size: 3.5em;
     color: #FFFFFF;
     padding: 1em 1em 0.5em;
+    position: relative;
 }
 @media (max-width: 400px) {
     #textM{
@@ -31,6 +32,7 @@ body{
 }
 
 #magicZone{
+    position: relative;
     padding: 1em;
     text-align: center;
     position: relative;
@@ -69,4 +71,7 @@ input[placeholder]{
     text-align: center;
     font-style: italic;
     color: darkgreen;
+}
+*:focus {
+    outline: none;
 }
