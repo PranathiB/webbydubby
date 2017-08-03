@@ -13,7 +13,7 @@ function magicWordAnalyser(pass){
         wrongPass();
         clearField();
     }
-    else if(pass === "hello") {
+    else if(pass === "vladieboy") {
         successMessage();
         clearField();
     }

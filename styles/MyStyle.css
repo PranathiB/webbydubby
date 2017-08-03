@@ -29,7 +29,6 @@ body{
     position: relative;
     padding: 1em;
     text-align: center;
-    position: relative;
 }
 
 #pass{
@@ -52,7 +51,7 @@ input[placeholder]{
 #errorZone{
     padding: 0.2em;
     font-size: 1.2em;
-    color: mediumvioletred;
+    color: red;
     text-align: center;
     vertical-align: bottom;
     font-weight: 500;
